@@ -15,9 +15,10 @@ public:
 	{
 		m_isEnd = false;
 
-		m_frame;
-		m_Xdirection;
-		m_Ydirection;
+		m_frame = 0;
+		m_Xdirection = 0;
+		m_Ydirection = 0;
+		m_interval = 0;
 	}
 	virtual ~FallBlock() {}
 
@@ -26,7 +27,7 @@ public:
 
 	virtual SceneBase* update() override;
 	virtual void draw() override;
-
+	
 	virtual bool isEnd() { return m_isEnd; }
 private:
 	int m_Block[kFieldWideMember][kFieldHeightMember];
@@ -37,4 +38,6 @@ private:
 	int m_Xdirection;
 	//Y方向
 	int m_Ydirection;
+	//インターバル
+	int m_interval;
 };

@@ -20,8 +20,8 @@ SceneBase* SceneMain::update()
 
 void SceneMain::draw()
 {
-	//ブロック表示
-	m_fallBlock.draw();
 	//盤面表示
 	m_field.draw();
+	//ブロック表示
+	m_fallBlock.draw();
 }

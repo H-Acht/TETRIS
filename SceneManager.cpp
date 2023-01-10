@@ -1,5 +1,6 @@
 #include "SceneManager.h"
 #include <cassert>
+#include "SceneMain.h"
 
 #include "SceneTitle.h"
 
@@ -16,7 +17,7 @@ SceneManager::~SceneManager()
 
 void SceneManager::init()
 {
-	m_pScene = new SceneTitle;
+	m_pScene = new SceneMain;
 	m_pScene->init();
 }
 
