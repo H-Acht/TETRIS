@@ -15,6 +15,14 @@ public:
 	{
 		m_isEnd = false;
 
+		for (int x = 0; x < kFieldWideMember; x++)
+		{
+			for (int y = 0; y < kFieldHeightMember; y++)
+			{
+				m_Block[x][y] = 0;
+			}
+		}
+
 		m_frame = 0;
 		m_Xdirection = 0;
 		m_Ydirection = 0;
@@ -30,7 +38,7 @@ public:
 	
 	virtual bool isEnd() { return m_isEnd; }
 private:
-	int m_Block[kFieldWideMember][kFieldHeightMember];
+	int m_Block[kFieldHeightMember][kFieldWideMember];
 	bool m_isEnd;
 	//ƒtƒŒ[ƒ€‚ð”‚¦‚é
 	int m_frame;

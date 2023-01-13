@@ -13,6 +13,13 @@ public:
 public:
     Field()
     {
+        for (int x = 0; x < kFieldWideMember; x++)
+        {
+            for (int y = 0; y < kFieldHeightMember; y++)
+            {
+                m_Block[x][y] = 0;
+            }
+        }
     }
     virtual ~Field() {}
 
